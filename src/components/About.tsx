@@ -8,10 +8,14 @@ export default function About() {
   return (
     <section 
       id="about" 
-      className="py-20"
+      className="py-20 bg-gradient-to-b from-background to-secondary/30 relative"
       ref={setRef as any}
     >
-      <div className="container mx-auto px-6">
+      {/* Decorative elements */}
+      <div className="absolute -top-40 left-1/4 w-72 h-72 bg-primary opacity-5 rounded-full blur-3xl" />
+      <div className="absolute -bottom-40 right-1/4 w-60 h-60 bg-primary opacity-5 rounded-full blur-3xl" />
+      
+      <div className="container mx-auto px-6 relative z-10">
         {/* Section Header */}
         <div className={`text-center mb-16 transition-all duration-700 transform ${
           isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
@@ -19,7 +23,7 @@ export default function About() {
           <h2 className="inline-block px-4 py-1.5 mb-4 text-sm bg-primary/10 text-primary rounded-full">
             About Me
           </h2>
-          <h3 className="text-4xl font-bold mb-4">
+          <h3 className="text-4xl font-bold mb-4 bg-gradient-to-r from-primary to-pink-500 text-transparent bg-clip-text">
             My Background
           </h3>
           <p className="max-w-2xl mx-auto text-muted-foreground">
@@ -40,7 +44,7 @@ export default function About() {
               {ABOUT_CONTENT.values.map((value, index) => (
                 <div 
                   key={value.title} 
-                  className="flex flex-col p-6 bg-secondary rounded-xl transition-transform hover:translate-y-[-5px] duration-300"
+                  className="flex flex-col p-6 bg-secondary/50 rounded-xl border border-border/50 hover:border-primary/20 transition-transform hover:translate-y-[-5px] duration-300 hover:shadow-md"
                   style={{ animationDelay: `${0.3 + index * 0.1}s` }}
                 >
                   <div className="mb-4 p-3 rounded-full bg-primary/10 w-fit">
@@ -60,17 +64,17 @@ export default function About() {
               {ABOUT_CONTENT.stats.map((stat, index) => (
                 <div 
                   key={stat.label} 
-                  className="p-6 bg-secondary rounded-xl text-center transition-transform hover:translate-y-[-5px] duration-300"
+                  className="p-6 bg-primary/5 rounded-xl text-center transition-transform hover:translate-y-[-5px] duration-300 border border-primary/10 hover:border-primary/30"
                   style={{ animationDelay: `${0.5 + index * 0.1}s` }}
                 >
-                  <p className="text-3xl font-bold mb-1">{stat.number}</p>
+                  <p className="text-3xl font-bold mb-1 text-primary">{stat.number}</p>
                   <p className="text-sm text-muted-foreground">{stat.label}</p>
                 </div>
               ))}
             </div>
             
             {/* Timeline Component for Experience */}
-            <div className="relative pl-8 border-l border-border space-y-8 py-4">
+            <div className="relative pl-8 border-l border-primary/20 space-y-8 py-4">
               {EXPERIENCE_TIMELINE.map((item, index) => (
                 <div 
                   key={item.title}
@@ -99,7 +103,7 @@ export default function About() {
             {EDUCATION_TIMELINE.map((item, index) => (
               <div 
                 key={item.title}
-                className="p-6 bg-secondary rounded-xl transition-all duration-300 hover:translate-y-[-5px]"
+                className="p-6 bg-secondary/30 rounded-xl transition-all duration-300 hover:translate-y-[-5px] border border-border/50 hover:border-primary/20 hover:shadow-md"
                 style={{ animationDelay: `${0.8 + index * 0.1}s` }}
               >
                 <div className="flex gap-4">

@@ -10,10 +10,14 @@ export default function Projects() {
   return (
     <section 
       id="projects" 
-      className="py-20 bg-secondary"
+      className="py-20 bg-secondary/50 relative overflow-hidden"
       ref={setRef as any}
     >
-      <div className="container mx-auto px-6">
+      {/* Decorative elements */}
+      <div className="absolute -top-40 -right-40 w-80 h-80 bg-primary opacity-5 rounded-full blur-3xl" />
+      <div className="absolute -bottom-40 -left-40 w-80 h-80 bg-primary opacity-5 rounded-full blur-3xl" />
+      
+      <div className="container mx-auto px-6 relative z-10">
         <div className={`text-center mb-16 transition-all duration-700 transform ${
           isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
         }`}>

@@ -57,19 +57,20 @@ export default function Hero() {
     >
       {/* Background elements */}
       <div className="absolute inset-0 -z-10">
-        <div className="absolute -top-40 -right-40 w-80 h-80 bg-primary opacity-5 rounded-full blur-3xl" />
-        <div className="absolute top-1/3 -left-20 w-60 h-60 bg-primary opacity-5 rounded-full blur-3xl" />
-        <div className="absolute -bottom-40 right-1/4 w-72 h-72 bg-primary opacity-5 rounded-full blur-3xl" />
+        <div className="absolute -top-40 -right-40 w-80 h-80 bg-primary opacity-10 rounded-full blur-3xl" />
+        <div className="absolute top-1/3 -left-20 w-60 h-60 bg-primary opacity-10 rounded-full blur-3xl" />
+        <div className="absolute -bottom-40 right-1/4 w-72 h-72 bg-primary opacity-10 rounded-full blur-3xl" />
+        <div className="absolute right-0 bottom-0 left-0 h-1/3 bg-gradient-to-t from-secondary/30 to-transparent" />
       </div>
 
       {/* Content */}
       <div className="container mx-auto text-center">
         <div className="flex flex-col items-center justify-center space-y-6 max-w-3xl mx-auto">
-          <h2 className="inline-block px-4 py-1.5 mb-2 text-sm bg-secondary text-secondary-foreground rounded-full animate-fade-in">
+          <h2 className="inline-block px-4 py-1.5 mb-2 text-sm bg-primary text-primary-foreground rounded-full animate-fade-in">
             Hello, I'm a Web Developer
           </h2>
           
-          <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold tracking-tight leading-tight md:leading-tight lg:leading-tight animate-fade-in">
+          <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold tracking-tight leading-tight md:leading-tight lg:leading-tight animate-fade-in bg-gradient-to-r from-primary to-pink-500 text-transparent bg-clip-text">
             Creating Digital Experiences with Purpose
           </h1>
           
@@ -85,7 +86,7 @@ export default function Hero() {
               href="https://github.com/yourusername" 
               target="_blank" 
               rel="noopener noreferrer"
-              className="p-3 bg-secondary text-secondary-foreground rounded-full hover:bg-primary hover:text-primary-foreground transition-all duration-300"
+              className="p-3 bg-primary/10 text-primary rounded-full hover:bg-primary hover:text-primary-foreground transition-all duration-300"
               aria-label="GitHub Profile"
             >
               <Github size={20} />
@@ -94,7 +95,7 @@ export default function Hero() {
               href="https://linkedin.com/in/yourusername" 
               target="_blank" 
               rel="noopener noreferrer"
-              className="p-3 bg-secondary text-secondary-foreground rounded-full hover:bg-primary hover:text-primary-foreground transition-all duration-300"
+              className="p-3 bg-primary/10 text-primary rounded-full hover:bg-primary hover:text-primary-foreground transition-all duration-300"
               aria-label="LinkedIn Profile"
             >
               <Linkedin size={20} />
@@ -103,14 +104,14 @@ export default function Hero() {
               href="https://twitter.com/yourusername" 
               target="_blank" 
               rel="noopener noreferrer"
-              className="p-3 bg-secondary text-secondary-foreground rounded-full hover:bg-primary hover:text-primary-foreground transition-all duration-300"
+              className="p-3 bg-primary/10 text-primary rounded-full hover:bg-primary hover:text-primary-foreground transition-all duration-300"
               aria-label="Twitter Profile"
             >
               <Twitter size={20} />
             </a>
             <a 
               href="mailto:hello@example.com" 
-              className="p-3 bg-secondary text-secondary-foreground rounded-full hover:bg-primary hover:text-primary-foreground transition-all duration-300"
+              className="p-3 bg-primary/10 text-primary rounded-full hover:bg-primary hover:text-primary-foreground transition-all duration-300"
               aria-label="Email Me"
             >
               <Mail size={20} />
@@ -123,10 +124,10 @@ export default function Hero() {
       <div className="absolute bottom-10 left-1/2 -translate-x-1/2 animate-bounce">
         <button 
           onClick={handleScrollDown}
-          className="p-3 rounded-full bg-secondary hover:bg-primary hover:text-primary-foreground transition-all duration-300"
+          className="p-3 rounded-full bg-primary/20 hover:bg-primary hover:text-primary-foreground transition-all duration-300"
           aria-label="Scroll down"
         >
-          <ArrowDown size={20} />
+          <ArrowDown size={20} className="text-primary hover:text-primary-foreground" />
         </button>
       </div>
     </section>

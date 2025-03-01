@@ -8,12 +8,13 @@ export default function Footer() {
   };
 
   return (
-    <footer className="bg-secondary py-12">
-      <div className="container mx-auto px-6">
+    <footer className="bg-secondary/30 py-12 relative">
+      <div className="absolute inset-0 bg-gradient-to-b from-secondary/10 to-secondary/50 z-0" />
+      <div className="container mx-auto px-6 relative z-10">
         <div className="flex flex-col items-center justify-center mb-10">
           <button
             onClick={handleScrollToTop}
-            className="p-4 bg-primary text-primary-foreground rounded-full mb-6 hover:bg-primary/90 transition-all duration-300 animate-fade-in"
+            className="p-4 bg-primary text-primary-foreground rounded-full mb-6 hover:bg-primary/90 transition-all duration-300 animate-fade-in shadow-md hover:shadow-lg"
             aria-label="Scroll to top"
           >
             <ArrowUp size={20} />

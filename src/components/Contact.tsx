@@ -1,4 +1,3 @@
-
 import { useState } from "react";
 import { useElementOnScreen } from "@/hooks/use-scroll-position";
 import { CONTACT_INFO } from "@/lib/data";
@@ -48,34 +47,98 @@ export default function Contact() {
   };
 
   return (
-    <section 
-      id="contact" 
-      className="py-20"
-      ref={setRef as any}
-    >
+    <section id="contact" className="py-20 bg-gradient-to-b from-background to-secondary/30">
       <div className="container mx-auto px-6">
         {/* Section Header */}
-        <div className={`text-center mb-16 transition-all duration-700 transform ${
-          isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
-        }`}>
+        <div className="text-center mb-16">
           <h2 className="inline-block px-4 py-1.5 mb-4 text-sm bg-primary/10 text-primary rounded-full">
-            Get in Touch
+            Get In Touch
           </h2>
           <h3 className="text-4xl font-bold mb-4">
             Contact Me
           </h3>
           <p className="max-w-2xl mx-auto text-muted-foreground">
-            Have a project in mind or want to collaborate? Feel free to reach out.
+            Have a project in mind? Let's talk about it. Fill out the form below and I'll get back to you as soon as possible.
           </p>
         </div>
         
-        {/* Contact Content */}
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
-          {/* Left Column - Contact Form */}
-          <div className="bg-secondary p-8 rounded-xl shadow-sm animate-fade-in" style={{ animationDelay: "0.2s" }}>
-            <h4 className="text-xl font-semibold mb-6">Send a Message</h4>
+        {/* Contact Form and Information */}
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12">
+          {/* Contact Information */}
+          <div className="space-y-8 order-2 lg:order-1">
+            <div>
+              <h4 className="text-xl font-semibold mb-4">Contact Information</h4>
+              <p className="text-muted-foreground mb-6">
+                Fill out the form and I will get back to you within 24 hours.
+              </p>
+            </div>
             
-            <form onSubmit={handleSubmit} className="space-y-6">
+            {/* Contact Cards */}
+            <div className="space-y-6">
+              <div className="flex items-start gap-4">
+                <div className="p-3 bg-secondary rounded-full">
+                  <Mail size={20} className="text-primary" />
+                </div>
+                <div>
+                  <h5 className="text-sm font-medium text-muted-foreground mb-1">Email</h5>
+                  <a 
+                    href={`mailto:${CONTACT_INFO.email}`} 
+                    className="text-foreground hover:text-primary transition-colors duration-200"
+                  >
+                    {CONTACT_INFO.email}
+                  </a>
+                </div>
+              </div>
+              
+              <div className="flex items-start gap-4">
+                <div className="p-3 bg-secondary rounded-full">
+                  <Phone size={20} className="text-primary" />
+                </div>
+                <div>
+                  <h5 className="text-sm font-medium text-muted-foreground mb-1">Phone</h5>
+                  <a 
+                    href={`tel:${CONTACT_INFO.phone.replace(/\s+/g, '')}`} 
+                    className="text-foreground hover:text-primary transition-colors duration-200"
+                  >
+                    {CONTACT_INFO.phone}
+                  </a>
+                </div>
+              </div>
+              
+              <div className="flex items-start gap-4">
+                <div className="p-3 bg-secondary rounded-full">
+                  <MapPin size={20} className="text-primary" />
+                </div>
+                <div>
+                  <h5 className="text-sm font-medium text-muted-foreground mb-1">Location</h5>
+                  <p className="text-foreground">{CONTACT_INFO.location}</p>
+                </div>
+              </div>
+            </div>
+            
+            {/* Social Links */}
+            <div>
+              <h5 className="text-lg font-semibold mb-4">Follow Me</h5>
+              <div className="flex space-x-4">
+                {CONTACT_INFO.socialLinks.map((link) => (
+                  <a
+                    key={link.name}
+                    href={link.url}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="p-3 bg-secondary rounded-full hover:bg-primary hover:text-primary-foreground transition-all duration-300"
+                    aria-label={link.name}
+                  >
+                    {socialIcons[link.name as keyof typeof socialIcons]}
+                  </a>
+                ))}
+              </div>
+            </div>
+          </div>
+          
+          {/* Contact Form */}
+          <div className="bg-background border border-border p-8 rounded-xl shadow-sm order-1 lg:order-2">
+            <form className="space-y-6" onSubmit={handleSubmit}>
               <div>
                 <label htmlFor="name" className="block text-sm font-medium mb-2">
                   Your Name
@@ -124,10 +187,10 @@ export default function Contact() {
                 />
               </div>
               
-              <button
+              <button 
                 type="submit"
+                className="w-full py-3 px-4 bg-primary text-primary-foreground rounded-lg hover:bg-primary/90 transition-colors duration-300 disabled:opacity-50 disabled:cursor-not-allowed"
                 disabled={isSubmitting}
-                className="w-full flex items-center justify-center gap-2 px-6 py-3 bg-primary text-primary-foreground rounded-lg hover:opacity-90 transition-all duration-200 focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2 disabled:opacity-70"
               >
                 {isSubmitting ? (
                   <>
@@ -143,91 +206,12 @@ export default function Contact() {
               </button>
             </form>
           </div>
-          
-          {/* Right Column - Contact Information */}
-          <div className="animate-fade-in" style={{ animationDelay: "0.4s" }}>
-            <h4 className="text-xl font-semibold mb-6">Contact Information</h4>
-            
-            <div className="space-y-6">
-              <div className="flex items-start gap-4">
-                <div className="p-3 bg-secondary rounded-full">
-                  <Mail size={20} className="text-primary" />
-                </div>
-                <div>
-                  <h5 className="text-sm font-medium text-muted-foreground mb-1">Email</h5>
-                  <a 
-                    href={`mailto:${CONTACT_INFO.email}`} 
-                    className="text-foreground hover:text-primary transition-colors duration-200"
-                  >
-                    {CONTACT_INFO.email}
-                  </a>
-                </div>
-              </div>
-              
-              <div className="flex items-start gap-4">
-                <div className="p-3 bg-secondary rounded-full">
-                  <Phone size={20} className="text-primary" />
-                </div>
-                <div>
-                  <h5 className="text-sm font-medium text-muted-foreground mb-1">Phone</h5>
-                  <a 
-                    href={`tel:${CONTACT_INFO.phone.replace(/\s+/g, '')}`} 
-                    className="text-foreground hover:text-primary transition-colors duration-200"
-                  >
-                    {CONTACT_INFO.phone}
-                  </a>
-                </div>
-              </div>
-              
-              <div className="flex items-start gap-4">
-                <div className="p-3 bg-secondary rounded-full">
-                  <MapPin size={20} className="text-primary" />
-                </div>
-                <div>
-                  <h5 className="text-sm font-medium text-muted-foreground mb-1">Location</h5>
-                  <p className="text-foreground">{CONTACT_INFO.location}</p>
-                </div>
-              </div>
-            </div>
-            
-            <div className="mt-10">
-              <h5 className="text-sm font-medium text-muted-foreground mb-4">Connect with me</h5>
-              
-              <div className="flex gap-4">
-                {CONTACT_INFO.socialLinks.map((link) => (
-                  <a
-                    key={link.name}
-                    href={link.url}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="p-3 bg-secondary rounded-full hover:bg-primary hover:text-primary-foreground transition-all duration-300"
-                    aria-label={link.name}
-                  >
-                    {socialIcons[link.name as keyof typeof socialIcons]}
-                  </a>
-                ))}
-              </div>
-            </div>
-            
-            <div className="mt-10 p-6 bg-secondary rounded-xl">
-              <h5 className="font-medium mb-4">Working Hours</h5>
-              <div className="space-y-2 text-sm">
-                <div className="flex justify-between">
-                  <span className="text-muted-foreground">Monday - Friday:</span>
-                  <span>9:00 AM - 6:00 PM</span>
-                </div>
-                <div className="flex justify-between">
-                  <span className="text-muted-foreground">Saturday:</span>
-                  <span>10:00 AM - 4:00 PM</span>
-                </div>
-                <div className="flex justify-between">
-                  <span className="text-muted-foreground">Sunday:</span>
-                  <span>Closed</span>
-                </div>
-              </div>
-            </div>
-          </div>
         </div>
+      </div>
+      
+      {/* Toast */}
+      <div className="fixed bottom-0 left-0 right-0 z-50">
+        {toast}
       </div>
     </section>
   );

@@ -28,7 +28,7 @@ export default function ProjectCard({
   return (
     <div
       ref={cardRef}
-      className="project-card group relative rounded-lg overflow-hidden shadow-md h-[400px] transition-all duration-500 animate-fade-in"
+      className="project-card group relative rounded-lg overflow-hidden shadow-md h-[400px] transition-all duration-500 animate-fade-in border border-primary/10"
       style={{ animationDelay: delay }}
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
@@ -41,8 +41,8 @@ export default function ProjectCard({
           className="object-cover object-center w-full h-full transition-transform duration-500 group-hover:scale-105"
           loading="lazy"
         />
-        <div className={`absolute inset-0 bg-black transition-opacity duration-500 ${
-          isHovered ? "opacity-80" : "opacity-60"
+        <div className={`absolute inset-0 bg-gradient-to-t from-primary/90 to-black/60 transition-opacity duration-500 ${
+          isHovered ? "opacity-90" : "opacity-80"
         }`} />
       </div>
       
@@ -53,7 +53,7 @@ export default function ProjectCard({
           {tags.map((tag) => (
             <span 
               key={tag} 
-              className="px-3 py-1 text-xs font-medium bg-black/20 backdrop-blur-sm rounded-full"
+              className="px-3 py-1 text-xs font-medium bg-white/10 backdrop-blur-sm rounded-full"
             >
               {tag}
             </span>
@@ -94,7 +94,7 @@ export default function ProjectCard({
       >
         <a
           href={link}
-          className="flex items-center gap-2 px-4 py-3 bg-white text-black font-medium rounded-full transform transition-all duration-500 hover:scale-110"
+          className="flex items-center gap-2 px-4 py-3 bg-white text-primary font-medium rounded-full transform transition-all duration-500 hover:scale-110"
           target="_blank"
           rel="noopener noreferrer"
         >
