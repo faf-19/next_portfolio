@@ -42,7 +42,8 @@ export const PROJECTS = [
     title: "Modern E-commerce Platform",
     description: "A clean and user-friendly UI/UX design for an e-commerce platform with smart filtering, smooth cart flow, and a secure, intuitive checkout experience.",
     tags: ["Figma", "Pinterest", "UI/UX Design"],
-    imageUrl: "/src/lib/e-commerce.png",
+    imageUrl: "/assets/ecommerce.png",
+
     link: "https://motiff.com/file/0A6GaoyUgQkW2tUTrVKXE67?nodeId=0%3A1&type=design "
   },
   {
