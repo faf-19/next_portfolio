@@ -100,15 +100,7 @@ export default function Hero() {
             >
               <Linkedin size={20} />
             </a>
-            {/* <a 
-              href="https://twitter.com/yourusername" 
-              target="_blank" 
-              rel="noopener noreferrer"
-              className="p-3 bg-primary/10 text-primary rounded-full hover:bg-primary hover:text-primary-foreground transition-all duration-300"
-              aria-label="Twitter Profile"
-            >
-              <Twitter size={20} />
-            </a> */}
+            
             <a 
               href="mailto:fasikafaf19@gmail.com" 
               className="p-3 bg-primary/10 text-primary rounded-full hover:bg-primary hover:text-primary-foreground transition-all duration-300"
