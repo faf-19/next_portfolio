@@ -67,7 +67,7 @@ export default function Hero() {
       <div className="container mx-auto text-center">
         <div className="flex flex-col items-center justify-center space-y-6 max-w-3xl mx-auto">
           <h2 className="inline-block px-4 py-1.5 mb-2 text-sm bg-primary text-primary-foreground rounded-full animate-fade-in">
-            Hello, I'm a Web Developer
+            Hello, I'm Fasika Zergaw
           </h2>
           
           <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold tracking-tight leading-tight md:leading-tight lg:leading-tight animate-fade-in bg-gradient-to-r from-primary to-pink-500 text-transparent bg-clip-text">
@@ -83,7 +83,7 @@ export default function Hero() {
           
           <div className="flex space-x-4 mt-4 animate-fade-in">
             <a 
-              href="https://github.com/yourusername" 
+              href="https://github.com/faf-19" 
               target="_blank" 
               rel="noopener noreferrer"
               className="p-3 bg-primary/10 text-primary rounded-full hover:bg-primary hover:text-primary-foreground transition-all duration-300"
@@ -92,7 +92,7 @@ export default function Hero() {
               <Github size={20} />
             </a>
             <a 
-              href="https://linkedin.com/in/yourusername" 
+              href="https://linkedin.com/in/fasika-zergaw-95a4aa269" 
               target="_blank" 
               rel="noopener noreferrer"
               className="p-3 bg-primary/10 text-primary rounded-full hover:bg-primary hover:text-primary-foreground transition-all duration-300"
@@ -100,7 +100,7 @@ export default function Hero() {
             >
               <Linkedin size={20} />
             </a>
-            <a 
+            {/* <a 
               href="https://twitter.com/yourusername" 
               target="_blank" 
               rel="noopener noreferrer"
@@ -108,9 +108,9 @@ export default function Hero() {
               aria-label="Twitter Profile"
             >
               <Twitter size={20} />
-            </a>
+            </a> */}
             <a 
-              href="mailto:hello@example.com" 
+              href="mailto:fasikafaf19@gmail.com" 
               className="p-3 bg-primary/10 text-primary rounded-full hover:bg-primary hover:text-primary-foreground transition-all duration-300"
               aria-label="Email Me"
             >

@@ -40,31 +40,31 @@ export const NAV_LINKS = [
 export const PROJECTS = [
   {
     title: "Modern E-commerce Platform",
-    description: "A full-stack e-commerce solution with advanced filtering, cart management, and secure payment processing.",
-    tags: ["React", "Node.js", "MongoDB", "Stripe"],
-    imageUrl: "https://images.unsplash.com/photo-1498050108023-c5249f4df085?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1172&q=80",
-    link: "#"
+    description: "A clean and user-friendly UI/UX design for an e-commerce platform with smart filtering, smooth cart flow, and a secure, intuitive checkout experience.",
+    tags: ["Figma", "Pinterest", "UI/UX Design"],
+    imageUrl: "/src/lib/e-commerce.png",
+    link: "https://motiff.com/file/0A6GaoyUgQkW2tUTrVKXE67?nodeId=0%3A1&type=design "
   },
   {
     title: "Portfolio Website",
     description: "A minimalist portfolio showcase with smooth animations and responsive design to highlight creative work.",
     tags: ["React", "TailwindCSS", "Framer Motion"],
-    imageUrl: "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1172&q=80",
-    link: "#"
+    imageUrl: "/src/lib/creative.png",
+    link: "https://v0-creative-portfolio-website-omega-three.vercel.app/"
   },
   {
     title: "AI Task Management",
     description: "An intelligent task management application that uses machine learning to prioritize and suggest tasks.",
     tags: ["Vue.js", "Python", "TensorFlow", "FastAPI"],
-    imageUrl: "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80",
-    link: "#"
+    imageUrl: "/src/lib/task-manager.png",
+    link: "https://v0-ai-task-management-kappa.vercel.app/"
   },
   {
-    title: "Real-time Analytics Dashboard",
-    description: "A real-time data visualization platform for monitoring business metrics and performance indicators.",
+    title: "Quiz Parser",
+    description: "Transform your text files into interactive quizzes instantly. Upload your questions and get an engaging quiz experience with automatic answer detection and detailed explanations.",
     tags: ["Next.js", "D3.js", "Supabase", "WebSockets"],
-    imageUrl: "https://images.unsplash.com/photo-1483058712412-4245e9b90334?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80",
-    link: "#"
+    imageUrl: "/src/lib/quiz-file.png",
+    link: "https://v0-txt-file-quiz-app.vercel.app/"
   },
 ];
 
@@ -85,6 +85,7 @@ export const SKILLS = [
     icon: Palette,
     skills: [
       { name: "Figma", level: 80 },
+      { name: "Motiff", level: 95 },
       { name: "Tailwind CSS", level: 90 },
       { name: "UI/UX Principles", level: 85 },
       { name: "Responsive Design", level: 90 },
@@ -94,11 +95,19 @@ export const SKILLS = [
     category: "Backend",
     icon: Terminal,
     skills: [
-      { name: "Node.js", level: 85 },
-      { name: "Express", level: 80 },
-      { name: "RESTful APIs", level: 90 },
-      { name: "MongoDB", level: 75 },
-      { name: "GraphQL", level: 70 },
+      { name: "Node.js", level: 75 },
+      { name: "Express", level: 70 },
+      { name: "RESTful APIs", level: 65 },
+      { name: "MongoDB", level: 80 },
+    ],
+  },
+  {
+    category: "Mobile App",
+    icon: Terminal,
+    skills: [
+      { name: "Dart", level: 75 },
+      { name: "Flutter", level: 85 },
+      { name: "Android Studio", level: 90 },
     ],
   },
   {
@@ -107,8 +116,6 @@ export const SKILLS = [
     skills: [
       { name: "Git & GitHub", level: 90 },
       { name: "VS Code", level: 95 },
-      { name: "Webpack", level: 75 },
-      { name: "Docker", level: 65 },
     ],
   },
 ];
@@ -139,43 +146,43 @@ export const ABOUT_CONTENT = {
     }
   ],
   stats: [
-    { number: "5+", label: "Years Experience" },
-    { number: "50+", label: "Projects Completed" },
-    { number: "20+", label: "Happy Clients" },
+    { number: "3+", label: "Years Experience" },
+    { number: "10+", label: "Projects Completed" },
+    { number: "5+", label: "Happy Clients" },
     { number: "99%", label: "Client Satisfaction" }
   ],
   experience: [
     {
-      title: "Senior Frontend Developer",
-      company: "Tech Innovations Inc.",
-      period: "2021 - Present",
-      description: "Lead development of high-traffic web applications using React and Next.js."
+      title: "Junior Frontend Developer",
+      company: "Everlink technology solution.",
+      period: "2023 - 2024",
+      description: "Paricipate development of e-commerce web applications using React and Next.js."
     },
     {
       title: "Web Developer",
-      company: "Digital Solutions Agency",
-      period: "2019 - 2021",
+      company: "Eaglelion Technologies",
+      period: "2024 - 2025",
       description: "Built responsive websites and web applications for various clients."
     },
     {
-      title: "Junior Developer",
+      title: "Mobile App Developer",
       company: "StartUp Studios",
-      period: "2018 - 2019",
+      period: "2023 - 2025",
       description: "Contributed to frontend development using React and various CSS frameworks."
     }
   ],
   education: [
     {
-      degree: "Master's in Computer Science",
-      institution: "Tech University",
-      period: "2016 - 2018",
+      degree: "Bachelor's in Computer Science and Engineering",
+      institution: "Adama science and Technology University",
+      period: "2021 - 2025",
       description: "Specialized in Human-Computer Interaction and Web Technologies."
     },
     {
-      degree: "Bachelor's in Information Technology",
-      institution: "State University",
-      period: "2012 - 2016",
-      description: "Studied programming fundamentals, algorithms, and database systems."
+      degree: "Certificate in mobile app development",
+      institution: "Udacity",
+      period: "2023 - 2024",
+      description: "Studied programming fundamentals, algorithms, and mobile app development using flutter."
     }
   ]
 };
@@ -183,17 +190,17 @@ export const ABOUT_CONTENT = {
 export const EDUCATION_TIMELINE = [
   {
     icon: GraduationCap,
-    title: "Master's in Computer Science",
-    location: "Tech University",
-    description: "Specialized in Web Technologies and HCI",
-    date: "2016 - 2018",
+    title: "Bachelor's in Computer Science and Engineering",
+    location: "Adama Science and Technology University",
+    description: "Specialized in Human-Computer Interaction and Web Technologies",
+    date: "2021 - 2025",
   },
   {
     icon: BookOpen,
-    title: "Bachelor's in Information Technology",
-    location: "State University",
-    description: "Dean's List, Graduated with Honors",
-    date: "2012 - 2016",
+    title: "Certificate in mobile app development",
+    location: "udacity",
+    description: "Studied programming fundamentals, algorithms, and mobile app development using flutter",
+    date: "2023 - 2024",
   },
 ];
 
@@ -222,21 +229,18 @@ export const EXPERIENCE_TIMELINE = [
 ];
 
 export const CONTACT_INFO = {
-  email: "hello@example.com",
-  phone: "+1 (123) 456-7890",
-  location: "San Francisco, CA",
+  email: "fasikafaf19@gmail.com",
+  phone: "+251 988 34 85 24",
+  location: "Addis Abeba, Ethiopia",
   socialLinks: [
     {
       name: "GitHub",
-      url: "https://github.com/yourusername",
+      url: "https://github.com/faf-19",
     },
     {
       name: "LinkedIn",
-      url: "https://linkedin.com/in/yourusername",
+      url: "https://linkedin.com/in/fasika-zergaw-95a4aa269",
     },
-    {
-      name: "Twitter",
-      url: "https://twitter.com/yourusername",
-    },
+
   ],
 };
