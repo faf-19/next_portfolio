@@ -40,31 +40,31 @@ export const NAV_LINKS = [
 export const PROJECTS = [
   {
     title: "Modern E-commerce Platform",
-    description: "A full-stack e-commerce solution with advanced filtering, cart management, and secure payment processing.",
-    tags: ["React", "Node.js", "MongoDB", "Stripe"],
+    description: "A clean and user-friendly UI/UX design for an e-commerce platform with smart filtering, smooth cart flow, and a secure, intuitive checkout experience.",
+    tags: ["Figma", "Motiff", "pinterest", "UI/UX design"],
     imageUrl: "https://images.unsplash.com/photo-1498050108023-c5249f4df085?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1172&q=80",
-    link: "#"
+    link: "https://motiff.com/file/0A6GaoyUgQkW2tUTrVKXE67?nodeId=0%3A1&type=design"
   },
   {
     title: "Portfolio Website",
     description: "A minimalist portfolio showcase with smooth animations and responsive design to highlight creative work.",
     tags: ["React", "TailwindCSS", "Framer Motion"],
     imageUrl: "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1172&q=80",
-    link: "#"
+    link: "https://v0-creative-portfolio-website-omega-three.vercel.app/"
   },
   {
     title: "AI Task Management",
     description: "An intelligent task management application that uses machine learning to prioritize and suggest tasks.",
     tags: ["Vue.js", "Python", "TensorFlow", "FastAPI"],
     imageUrl: "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80",
-    link: "#"
+    link: "https://v0-ai-task-management-kappa.vercel.app/"
   },
   {
-    title: "Real-time Analytics Dashboard",
-    description: "A real-time data visualization platform for monitoring business metrics and performance indicators.",
+    title: "Quiz Parser",
+    description: "Transform your text files into interactive quizzes instantly. Upload your questions and get an engaging quiz experience with automatic answer detection and detailed explanations.",
     tags: ["Next.js", "D3.js", "Supabase", "WebSockets"],
     imageUrl: "https://images.unsplash.com/photo-1483058712412-4245e9b90334?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80",
-    link: "#"
+    link: "https://v0-txt-file-quiz-app.vercel.app/"
   },
 ];
 
@@ -228,7 +228,7 @@ export const CONTACT_INFO = {
   socialLinks: [
     {
       name: "GitHub",
-      url: "https://github.com/yourusername",
+      url: "https://github.com/faf-19",
     },
     {
       name: "LinkedIn",
