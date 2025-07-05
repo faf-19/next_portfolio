@@ -40,32 +40,31 @@ export const NAV_LINKS = [
 export const PROJECTS = [
   {
     title: "Modern E-commerce Platform",
-    description: "A clean and user-friendly UI/UX design for an e-commerce platform with smart filtering, smooth cart flow, and a secure, intuitive checkout experience.",
-    tags: ["Figma", "Pinterest", "UI/UX Design"],
-    imageUrl: "/assets/ecommerce.png",
-
-    link: "https://motiff.com/file/0A6GaoyUgQkW2tUTrVKXE67?nodeId=0%3A1&type=design "
+    description: "A full-stack e-commerce solution with advanced filtering, cart management, and secure payment processing.",
+    tags: ["React", "Node.js", "MongoDB", "Stripe"],
+    imageUrl: "https://images.unsplash.com/photo-1498050108023-c5249f4df085?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1172&q=80",
+    link: "#"
   },
   {
     title: "Portfolio Website",
     description: "A minimalist portfolio showcase with smooth animations and responsive design to highlight creative work.",
     tags: ["React", "TailwindCSS", "Framer Motion"],
-    imageUrl: "/src/lib/creative.png",
-    link: "https://v0-creative-portfolio-website-omega-three.vercel.app/"
+    imageUrl: "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1172&q=80",
+    link: "#"
   },
   {
     title: "AI Task Management",
     description: "An intelligent task management application that uses machine learning to prioritize and suggest tasks.",
     tags: ["Vue.js", "Python", "TensorFlow", "FastAPI"],
-    imageUrl: "/src/lib/task-manager.png",
-    link: "https://v0-ai-task-management-kappa.vercel.app/"
+    imageUrl: "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80",
+    link: "#"
   },
   {
-    title: "Quiz Parser",
-    description: "Transform your text files into interactive quizzes instantly. Upload your questions and get an engaging quiz experience with automatic answer detection and detailed explanations.",
+    title: "Real-time Analytics Dashboard",
+    description: "A real-time data visualization platform for monitoring business metrics and performance indicators.",
     tags: ["Next.js", "D3.js", "Supabase", "WebSockets"],
-    imageUrl: "/src/lib/quiz-file.png",
-    link: "https://v0-txt-file-quiz-app.vercel.app/"
+    imageUrl: "https://images.unsplash.com/photo-1483058712412-4245e9b90334?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1170&q=80",
+    link: "#"
   },
 ];
 
@@ -86,7 +85,6 @@ export const SKILLS = [
     icon: Palette,
     skills: [
       { name: "Figma", level: 80 },
-      { name: "Motiff", level: 95 },
       { name: "Tailwind CSS", level: 90 },
       { name: "UI/UX Principles", level: 85 },
       { name: "Responsive Design", level: 90 },
@@ -96,19 +94,11 @@ export const SKILLS = [
     category: "Backend",
     icon: Terminal,
     skills: [
-      { name: "Node.js", level: 75 },
-      { name: "Express", level: 70 },
-      { name: "RESTful APIs", level: 65 },
-      { name: "MongoDB", level: 80 },
-    ],
-  },
-  {
-    category: "Mobile App",
-    icon: Terminal,
-    skills: [
-      { name: "Dart", level: 75 },
-      { name: "Flutter", level: 85 },
-      { name: "Android Studio", level: 90 },
+      { name: "Node.js", level: 85 },
+      { name: "Express", level: 80 },
+      { name: "RESTful APIs", level: 90 },
+      { name: "MongoDB", level: 75 },
+      { name: "GraphQL", level: 70 },
     ],
   },
   {
@@ -117,6 +107,8 @@ export const SKILLS = [
     skills: [
       { name: "Git & GitHub", level: 90 },
       { name: "VS Code", level: 95 },
+      { name: "Webpack", level: 75 },
+      { name: "Docker", level: 65 },
     ],
   },
 ];
@@ -157,7 +149,7 @@ export const ABOUT_CONTENT = {
       title: "Junior Frontend Developer",
       company: "Everlink technology solution.",
       period: "2023 - 2024",
-      description: "Paricipate development of e-commerce web applications using React and Next.js."
+      description: "Paricipate development of lottery mobile applications using Dart, flutter and firebase."
     },
     {
       title: "Web Developer",
@@ -208,40 +200,43 @@ export const EDUCATION_TIMELINE = [
 export const EXPERIENCE_TIMELINE = [
   {
     icon: BrainCircuit,
-    title: "Senior Frontend Developer",
-    location: "Tech Innovations Inc.",
-    description: "Leading web application development teams",
-    date: "2021 - Present",
+    title: "Junior Frontend Developer",
+    location: "Everlink technology solution.",
+    description: "participating mobile application development teams",
+    date: "2023 - 2024",
   },
   {
     icon: Blocks,
     title: "Web Developer",
-    location: "Digital Solutions Agency",
+    location: "Eaglelion Technologies",
     description: "Building responsive web applications",
-    date: "2019 - 2021",
+    date: "2013 - 2024",
   },
   {
     icon: LayoutGrid,
     title: "Junior Developer",
     location: "StartUp Studios",
     description: "Creating user interfaces and components",
-    date: "2018 - 2019",
+    date: "2022 - present",
   },
 ];
 
 export const CONTACT_INFO = {
   email: "fasikafaf19@gmail.com",
-  phone: "+251 988 34 85 24",
-  location: "Addis Abeba, Ethiopia",
+  phone: "+251 988 34 85 ",
+  location: "San Francisco, CA",
   socialLinks: [
     {
       name: "GitHub",
-      url: "https://github.com/faf-19",
+      url: "https://github.com/yourusername",
     },
     {
       name: "LinkedIn",
-      url: "https://linkedin.com/in/fasika-zergaw-95a4aa269",
+      url: "https://linkedin.com/in/yourusername",
     },
-
+    {
+      name: "Twitter",
+      url: "https://twitter.com/yourusername",
+    },
   ],
 };
